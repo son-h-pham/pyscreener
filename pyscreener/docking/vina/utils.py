@@ -10,3 +10,4 @@ class Software(AutoName):
     PSOVINA = auto()
     QVINA = auto()
     SMINA = auto()
+    GNINA = auto()
