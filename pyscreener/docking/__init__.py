@@ -22,7 +22,7 @@ init(autoreset=True)
 def build_metadata(software: str, metadata: Optional[Dict] = None) -> SimulationMetadata:
     metadata = metadata or {}
 
-    if software.lower() in ("vina", "qvina", "smina", "psovina"):
+    if software.lower() in ("vina", "qvina", "smina", "psovina", "gnina"):
         from pyscreener.docking.vina import VinaMetadata
 
         d_md = asdict(VinaMetadata())
@@ -42,7 +42,7 @@ def build_metadata(software: str, metadata: Optional[Dict] = None) -> Simulation
 
 
 def get_runner(software: str) -> DockingRunner:
-    if software.lower() in ("vina", "qvina", "smina", "psovina"):
+    if software.lower() in ("vina", "qvina", "smina", "psovina", "gnina"):
         from pyscreener.docking.vina import VinaRunner
 
         return VinaRunner
