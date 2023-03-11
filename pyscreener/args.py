@@ -127,7 +127,7 @@ def add_supply_args(parser: ArgumentParser):
 def add_screen_args(parser: ArgumentParser):
     parser.add_argument(
         "--screen-type",
-        choices=("dock", "dock6", "ucsfdock", "vina", "qvina", "smina", "psovina"),
+        choices=("dock", "dock6", "ucsfdock", "vina", "qvina", "smina", "psovina", "gnina"),
         required=True,
         help="the type of docking screen to perform",
     )
