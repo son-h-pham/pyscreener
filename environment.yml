@@ -8,6 +8,8 @@ dependencies:
   - pdbfixer
   - pip
   - python=3.8
+  - cudatoolkit=11.7
+  - pytorch::pytorch >=1.10
   - openbabel
   - openmm
   - pip:
@@ -16,8 +18,11 @@ dependencies:
     - h5py
     - numpy
     - ray[default]>=2.0
+    - ray[tune]
     - rdkit
     - pandas
     - scikit_learn
     - scipy
     - tqdm
+    - tensorflow
+    - tensorflow-addons
