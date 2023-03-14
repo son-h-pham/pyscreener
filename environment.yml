@@ -9,7 +9,7 @@ dependencies:
   - pip
   - python=3.8
   - cudatoolkit=11.7
-  - pytorch-cuda=11.7::pytorch
+  - pytorch-cuda::pytorch=11.7
   - pytorch
   - torchvision
   - torchaudio
