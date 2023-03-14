@@ -5,18 +5,17 @@ channels:
   - defaults
 
 dependencies:
+  - python=3.8
+  - pip
   - pdbfixer
   - pip
   - python=3.8
-  - cudatoolkit=11.7
+  - nvidia::cudatoolkit=11.7
   - pytorch::pytorch-cuda=11.7
-  - pytorch::pytorch
-  - pytorch::torchvision
-  - pytorch::torchaudio
+  - pytorch
   - openbabel
   - openmm
   - tmap::tmap
-  - optuna
   - pip:
     - colorama
     - configargparse
@@ -33,3 +32,4 @@ dependencies:
     - tensorflow-addons
     - pytorch-lightning
     - git+https://github.com/reymond-group/map4@v1.0
+    - git+https://github.com/optuna/optuna.git
