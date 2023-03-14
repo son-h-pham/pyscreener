@@ -317,7 +317,8 @@ class VinaRunner(DockingRunner):
             the scores of the docked binding modes in the ordering of the log file. None if no
             scores were parsed or the log file was unparsable
         """
-        TABLE_BORDER = "-----+------------+----------+----------"
+        #TABLE_BORDER = "-----+------------+----------+----------"
+        TABLE_BORDER = "----+"
         try:
             with open(logfile) as fid:
                 for line in fid:
