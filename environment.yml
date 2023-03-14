@@ -26,3 +26,4 @@ dependencies:
     - tqdm
     - tensorflow
     - tensorflow-addons
+    - pytorch-lightning
