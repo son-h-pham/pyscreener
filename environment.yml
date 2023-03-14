@@ -15,6 +15,8 @@ dependencies:
   - pytorch::torchaudio
   - openbabel
   - openmm
+  - tmap::tmap
+  - optuna
   - pip:
     - colorama
     - configargparse
@@ -30,3 +32,4 @@ dependencies:
     - tensorflow
     - tensorflow-addons
     - pytorch-lightning
+    - git+https://github.com/reymond-group/map4@v1.0
