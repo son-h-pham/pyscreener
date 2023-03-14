@@ -200,7 +200,7 @@ class VinaRunner(DockingRunner):
             path=Path(sim.out_path),
             extra=sim.metadata.extra,
         )
-
+        print(argv)
         ret = sp.run(argv, stdout=sp.PIPE, stderr=sp.PIPE)
         try:
             ret.check_returncode()
