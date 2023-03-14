@@ -17,7 +17,7 @@ dependencies:
     - configargparse
     - h5py
     - numpy
-    - ray[default]>=2.0
+    - ray[default]=1.13.0
     - ray[tune]
     - rdkit
     - pandas
