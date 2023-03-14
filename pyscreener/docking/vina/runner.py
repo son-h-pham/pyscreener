@@ -200,7 +200,7 @@ class VinaRunner(DockingRunner):
             path=Path(sim.out_path),
             extra=sim.metadata.extra,
         )
-        print(argv)
+        
         ret = sp.run(argv, stdout=sp.PIPE, stderr=sp.PIPE)
         try:
             ret.check_returncode()
@@ -291,12 +291,12 @@ class VinaRunner(DockingRunner):
             f"--size_x={size[0]}",
             f"--size_y={size[1]}",
             f"--size_z={size[2]}",
-            f"--cpu={ncpu}",
+            #f"--cpu={ncpu}",
             f"--out={out}",
             f"--log={log}",
             f"--exhaustiveness={exhaustiveness}",
             f"--num_modes={num_modes}",
-            f"--energy_range={energy_range}",
+            #f"--energy_range={energy_range}",
             *extra,
         ]
 
