@@ -3,6 +3,8 @@ name: pyscreener
 channels:
   - conda-forge
   - defaults
+  - pytorch
+  - nvidia
 
 dependencies:
   - pdbfixer
