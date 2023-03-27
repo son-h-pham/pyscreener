@@ -12,7 +12,7 @@ dependencies:
   - python=3.8
   - nvidia::cudatoolkit=11.7
   - pytorch::pytorch-cuda=11.7
-  - pytorch
+  - pytorch==1.13.1
   - openbabel
   - openmm
   - tmap::tmap
