@@ -81,7 +81,7 @@ class DockingVirtualScreen:
         self.tmp_dir = tempfile.gettempdir()
 
         ncpu = ncpu if self.runner.is_multithreaded() else 1
-        self.prepare_and_run = ray.remote(num_cpus=ncpu,num_gpus=1)(self.runner.prepare_and_run)
+        self.prepare_and_run = ray.remote(num_cpus=1,num_gpus=0.25)(self.runner.prepare_and_run)
 
         self.simulation_templates = [
             Simulation(
