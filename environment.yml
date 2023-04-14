@@ -11,7 +11,7 @@ dependencies:
   - pip
   - nvidia::cudatoolkit=11.7
   - pytorch::pytorch-cuda=11.7
-  - pytorch==1.13.1
+  - pytorch=1.13.1
   - openbabel
   - openmm
   - tmap::tmap
@@ -20,15 +20,15 @@ dependencies:
     - configargparse
     - h5py
     - numpy
-    - ray[default]=1.13.0
+    - ray[default]==1.13.0
     - ray[tune]
     - rdkit
     - pandas
     - scikit_learn
     - scipy
     - tqdm
-    - tensorflow=2.11.0
-    - tensorflow-addons=0.19.0
-    - pytorch-lightning=1.9.4
+    - tensorflow==2.11.0
+    - tensorflow-addons==0.19.0
+    - pytorch-lightning==1.9.4
     - git+https://github.com/reymond-group/map4@v1.0
     - git+https://github.com/optuna/optuna.git
